@@ -1,0 +1,32 @@
+organization:
+  id: UUID
+  name: String
+  description: String
+  created_at: DateTime
+  updated_at: DateTime
+  is_active: Boolean
+
+user:
+  id: UUID
+  name: String
+  primary_email: String
+  phone: String
+  password_salt: String
+  password_hash: String
+  is_active: Boolean
+  are_notifications_enabled: Boolean
+  city: String
+  state: String
+  country: String
+  postal_code: String
+  created_at: Datetime
+  updated_at: Datetime
+
+identity:
+  id: UUID #Foreign Key User
+  type: String # Phone, Google, Zoom
+  created_at: Datetime
+  updated_at: Datetime
+  username: String
+  refresh_token: String
+  signing_key: String

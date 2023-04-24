@@ -1,0 +1,40 @@
+event:
+  id: UUID
+  event_id: string # ID generated from event
+  name: string
+  start_at: datetime
+  end_at: datetime
+  location_type: online | offline
+  location: string
+  description: string
+  created_at: datetime
+  updated_at: datetime
+  is_offline: boolean
+  is_active: boolean
+  is_private: boolean
+  template_id: UUID
+
+user:
+  id: uuid
+  name: string
+  primary_email: string
+  is_active: boolean
+  is_admin: boolean
+  are_notifications_enabled: boolean
+  city: string
+  state: string
+  country: string
+  postal_code: string
+  created_at: datetime
+  updated_at: datetime
+
+template:
+  id: UUID
+  name: string
+  description: string
+  created_at: datetime
+  updated_at: datetime
+  is_active: boolean
+  is_recurring: boolean
+  recurrence_frequency: string #CRON
+  
